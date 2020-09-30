@@ -1,0 +1,5869 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="script/script.js"></script>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+<body>
+	<h1>unlockList settings</h1>
+	<!-- https://github.com/Powback/Venice-EBX/tree/master/Persistence/Unlocks/Vehicles
+	<div>
+		<label for="presets">Saved presets:</label>
+
+		<select id="presets">
+		  <option value="noShotgun">No Shotgun</option>
+		  <option value="noExplosives">No Explosives</option>
+		  <option value="noRadio">No Radio Becon</option>
+		  <option value="assault">Only Assault</option>
+		</select>
+	</div> -->
+	<br>
+	<div>
+		<label for="unlockMode">UnlockMode:</label>
+
+		<select id="unlockMode">
+		  <option value="all">All</option>
+		  <option value="whitelist">Whitelist</option>
+		  <option value="blacklist">Blacklist</option>
+		</select>
+	
+	</div>
+	<br>
+	<div id="assaultRifles">
+		<h2>Assault</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M16A4">
+          M16A3 (US)
+        </label> 
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M16A4_RU">
+          M16A3 (RU)
+        </label> 
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M16_Burst">
+          M16A4
+        </label> 
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M416">
+          M416
+        </label> 
+        <label>
+           <input type="checkbox" name="unlockList" value="U_AEK971">
+           AEK-971
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_AN94">
+          AN-94
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_AK74M_US">
+          AK74m (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_AK74M">
+          AK74m (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_F2000">
+          F2000
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_FAMAS">
+          FAMAS
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_L85A2">
+          L85A2
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_KH2002">
+          KH-2002
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_G3A3">
+          G3A3
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SteyrAug">
+          AUG A3
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SCAR-L">
+          SCAR-L
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M320_SHG">
+          M320 BUCK
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M26Mass_Frag">
+          M26 FRAG
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M320_SMK">
+          M320 SMOKE
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M26Mass_Flechette">
+          M26 DART
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M320_LVG">
+          M320 LVG
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M320_HE">
+          M320 HE
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M26Mass_Slug">
+          M26 SLUG
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M26Mass">
+          M26 MASS
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Defib">
+          DEFIBRILLATOR
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Medkit">
+          MEDIC KIT
+        </label>
+	</div>
+	<div id="carabiner">
+		<h2>Engineer</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SG553LB">
+          SG553
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SCAR-H">
+          SCAR-H
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_EODBot">
+          EOD BOT
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M4">
+          M4
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_A91">
+          A-91
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_FGM148">
+          FGM-148 JAVELIN
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_G36C">
+          G36C
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_AKS74u_US">
+          AKS-74u (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_AKS74u">
+          AKS-74u (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M4A1">
+          M4A1 (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M4A1_RU">
+          M4A1 (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_HK53">
+          G53
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MTAR">
+          MTAR-21
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_ACR">
+          ACW-R
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_QBZ-95B">
+          QBZ-95B
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Sa18IGLA">
+          SA-18 IGLA
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_FIM92">
+          FIM-92 STINGER
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M15">
+          M15 AT MINE
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Repairtool">
+          REPAIR TOOL
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SMAW">
+          SMAW
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_RPG7">
+          RPG-7V2
+        </label>
+	</div>
+	<div id="LMGs">
+		<h2>Supporter</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M224">
+          M224 MORTAR
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Pecheneg">
+          PKP PECHENEG
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M240">
+          M240B
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M60">
+          M60E4
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M27IAR">
+          M27 IAR (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M27IAR_RU">
+          M27 IAR (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_RPK-74M_US">
+          RPK-74M (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_RPK-74M">
+          RPK-74M (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_LSAT">
+          LSAT
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_L86">
+          L86A2
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_QBB-95">
+          QBB-95
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MG36">
+          MG36
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Type88">
+          TYPE 88 LMG
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M249">
+          M249
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_C4">
+          C4 EXPLOSIVES
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Claymore">
+          M18 CLAYMORE
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Ammobag">
+          AMMO BAG
+        </label>
+	</div>
+	<div id="sniperRifles">
+		<h2>Recon</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M39EBR">
+          M39 EMR
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MAV">
+          MAV
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M40A5">
+          M40A5
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M98B">
+          M98B
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MK11">
+          MK11 MOD 0 (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MK11_RU">
+          MK11 MOD 0 (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SVD_US">
+          SVD (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SVD">
+          SVD (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_QBU-88">
+          QBU-88
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_L96">
+          L96
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_HK417">
+          M417
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_JNG90">
+          JNG-90
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SKS">
+          SKS
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SV98">
+          SV98
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SOFLAM">
+          SOFLAM
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_UGS">
+          T-UGS
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_RadioBeacon">
+          RADIO BEACON
+        </label>
+	</div>
+	<div id="general">
+		<h2>General</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP412Rex">
+          MP412 REX
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP7">
+          MP7
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M93R">
+          93R
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_870">
+          870MCS
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Glock17">
+          G17C
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_PP2000">
+          PP-2000
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M9_TacticalLight">
+          M9 TACT.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP443_TacticalLight">
+          MP443 TACT.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_UMP45">
+          UMP-45
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Glock17_Silenced">
+          G17C SUPP.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M1014">
+          M1014
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M9_Silenced">
+          M9 SUPP.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP443_Silenced">
+          MP443 SUPP.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M9">
+          M9 (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M9_RU">
+          M9 (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP443_US">
+          MP443 (US)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP443">
+          MP443 (RU)
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Glock18">
+          G18
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MagpulPDR">
+          PDW-R
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SAIGA_20K">
+          SAIGA 12K
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Taurus44">
+          .44 MAGNUM
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_P90">
+          P90
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Glock18_Silenced">
+          G18 SUPP.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_USAS-12">
+          USAS-12
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Taurus44_Scoped">
+          .44 SCOPED
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_ASVal">
+          AS VAL
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_PP-19">
+          PP-19
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_SPAS12">
+          SPAS-12
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Crossbow_Scoped_RifleScope">
+          XBOW-SCOPED
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Jackhammer">
+          MK3A1
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Crossbow_Scoped_Cobra">
+          XBOW
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M1911_Tactical">
+          M1911 S-TAC
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_MP5K">
+          M5K
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Knife_Razor">
+          ACB-90
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_DAO-12">
+          DAO-12
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M1911_Lit">
+          M1911 TACT.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M1911">
+          M1911
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M1911_Silenced">
+          M1911 SUPP.
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_Knife">
+          KNIFE
+        </label>
+        <label>
+          <input type="checkbox" name="unlockList" value="U_M67">
+          M67 GRENADE
+        </label>
+	</div>
+	<div id="specialization">
+		<h2>Specialization</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="SprintBoostL1">
+          Sprint
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="SprintBoostL2">
+          Sprint (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="AmmoBoostL1">
+          Ammo
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="AmmoBoostL2">
+          Ammo (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="SuppressionBoostL1">
+          Suppression
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="SuppressionBoostL2">
+          Suppression (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="SuppressionResistL1">
+          Cover
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="SuppressionResistL2">
+          Cover (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="ExplosiveBoostL1">
+          Explosives
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="ExplosiveBoostL2">
+          Explosives (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="ExplosiveResistL1">
+          Flak
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="ExplosiveResistL2">
+          Flak (Squad)
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="GrenadeBoostL1">
+          Grenade
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="GrenadeBoostL2">
+          Grenade (Squad)
+        </label>
+	</div>
+	<div id="placeholders">
+		<h2>Placeholders</h2>
+        <label>
+          <input type="checkbox" name="unlockList" value="NoOptics">
+          NoOptics
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoSecondaryRail">
+          NoSecondaryRail
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoPrimaryAccessory">
+          NoPrimaryAccessory
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoSecondaryAccessory">
+          NoSecondaryAccessory
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoCamo">
+          NoCamo
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="DefaultCamo">
+          DefaultCamo
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoSpecialization">
+          NoSpecialization
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoGadget1">
+          NoGadget1
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoGadget2">
+          NoGadget2
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoPassive">
+          NoPassive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoStance">
+          NoStance
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoActive">
+          NoActive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoPilotPassive">
+          NoPilotPassive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoPilotActive">
+          NoPilotActive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoPilotStance">
+          NoPilotStance
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoGunnerPassive">
+          NoGunnerPassive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoGunnerActive">
+          NoGunnerActive
+        </label>
+		<label>
+          <input type="checkbox" name="unlockList" value="NoGunnerStance">
+          NoGunnerStance
+        </label>
+	</div>
+	<div id="attachment">
+		<div>
+		<label for="weapon">Attachment for:</label>
+
+		<select id="weapon">
+		  <option value="none"onclick="update('none')">-</option>
+		  <option value="U_M16A4" onclick="update('U_M16A4')">M16A3 / M16A4</option>
+		  <option value="U_M416" onclick="update('U_M416')">M416</option>
+		  <option value="U_AEK971" onclick="update('U_AEK971')">AEK-971</option>
+		  <option value="U_F2000" onclick="update('U_F2000')">F2000</option>
+		  <option value="U_AN94" onclick="update('U_AN94')">AN-94</option>
+		  <option value="U_AK74M" onclick="update('U_AK74M')">AK74M</option>
+		  <option value="U_KH2002" onclick="update('U_KH2002')">KH-2002</option>
+		  <option value="U_G3A3" onclick="update('U_G3A3')">G3A3</option>
+		  <option value="U_SteyrAug" onclick="update('U_SteyrAug')">AUG A3</option>
+		  <option value="U_FAMAS" onclick="update('U_FAMAS')">FAMAS</option>
+		  <option value="U_L85A2" onclick="update('U_L85A2')">L85A2</option>
+		  <option value="U_SCAR-L" onclick="update('U_SCAR-L')">SCAR-L</option>
+		  <option value="U_SG553LB" onclick="update('U_SG553LB')">SG553</option>
+		  <option value="U_SCAR-H" onclick="update('U_SCAR-H')">SCAR-H</option>
+		  <option value="U_M4A1" onclick="update('U_M4A1')">M4 / M4A1</option>
+		  <option value="U_A91" onclick="update('U_A91')">A91</option>
+		  <option value="U_G36C" onclick="update('U_G36C')">G36C</option>
+		  <option value="U_AKS74u" onclick="update('U_AKS74u')">AKS-74u</option>
+		  <option value="U_HK53" onclick="update('U_HK53')">G53</option>
+		  <option value="U_ACR" onclick="update('U_ACR')">ACW-R</option>
+		  <option value="U_QBZ-95B" onclick="update('U_QBZ-95B')">QBZ-95B</option>
+		  <option value="U_M249" onclick="update('U_M249')">M249</option>
+		  <option value="U_Pecheneg" onclick="update('U_Pecheneg')">PKP PECHENEG</option>
+		  <option value="U_M240" onclick="update('U_M240')">M240B</option>
+		  <option value="U_M27IAR" onclick="update('U_M27IAR')">M27-IAR</option>
+		  <option value="U_RPK-74M" onclick="update('U_RPK-74M')">RPK-74M</option>
+		  <option value="U_LSAT" onclick="update('U_LSAT')">LSAT</option>
+		  <option value="U_L86" onclick="update('U_L86')">L86A2</option>
+		  <option value="U_MG36" onclick="update('U_MG36')">MG36</option>
+		  <option value="U_Type88" onclick="update('U_Type88')">TYPE 88 LMG</option>
+		  <option value="U_M39EBR" onclick="update('U_M39EBR')">M39 EMR</option>
+		  <option value="U_SV98" onclick="update('U_SV98')">SV98</option>
+		  <option value="U_M40A5" onclick="update('U_M40A5')">M40A5</option>
+		  <option value="U_MK11" onclick="update('U_MK11')">MK11 MOD 0</option>
+		  <option value="U_SVD" onclick="update('U_SVD')">SVD</option>
+		  <option value="U_QBU-88" onclick="update('U_QBU-88')">QBU-88</option>
+		  <option value="U_L96" onclick="update('U_L96')">L96</option>
+		  <option value="U_HK417" onclick="update('U_HK417')">M417</option>
+		  <option value="U_JNG90" onclick="update('U_JNG90')">JNG-90</option>
+		  <option value="U_SKS" onclick="update('U_SKS')">SKS</option>
+		  <option value="U_MP7" onclick="update('U_MP7')">MP7</option>
+		  <option value="U_PP2000" onclick="update('U_PP2000')">PP2000</option>
+		  <option value="U_UMP45" onclick="update('U_UMP45')">UMP-45</option>
+		  <option value="U_MagpulPDR" onclick="update('U_MagpulPDR')">PDW-R</option>
+		  <option value="U_P90" onclick="update('U_P90')">P90</option>
+		  <option value="U_ASVal" onclick="update('U_ASVal')">AS VAL</option>
+		  <option value="U_PP-19" onclick="update('U_PP-19')">PP-19</option>
+		  <option value="U_MP5K" onclick="update('U_MP5K')">M5K</option>
+		  <option value="U_870" onclick="update('U_870')">870MCS</option>
+		  <option value="U_M1014" onclick="update('U_M1014')">M1014</option>
+		  <option value="U_SPAS12" onclick="update('U_SPAS12')">SPAS-12</option>
+		  <option value="U_SAIGA_20K" onclick="update('U_SAIGA_20K')">SAIGA 12K</option>
+		  <option value="U_USAS-12" onclick="update('U_USAS-12')">USAS-12</option>
+		  <option value="U_Jackhammer" onclick="update('U_Jackhammer')">MK3A1</option>
+		</select>
+		</div>
+	</div>
+	<div id="none"></div>
+	<div id="U_M16A4">
+		<h2>M16A3 / M16A4</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M16A4_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M416">
+		<h2>M416</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M416_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_AEK971">
+		<h2>AEK-971</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_Soundsuppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AEK971_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_F2000">
+		<h2>F2000</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Bipod">
+			Bipod
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Camo_NWU">
+			Navy Blue Digital Camo
+        </label> 
+		<label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Camo_PARTIZAN">
+			Woodland Oak Camo
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Heavy_Barrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_F2000_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_AN94">
+		<h2>AN-94</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_Soundsuppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AN94_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_AK74M">
+		<h2>AK74M</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AK74M_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_KH2002">
+		<h2>KH-2002</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Heavy_Barrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_KH2002_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_G3A3">
+		<h2>G3A3</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_BallisticScope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_FlashLight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A32_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G3A3_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SteyrAug">
+		<h2>AUG A3</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Heavy_Barrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SteyrAug_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_FAMAS">
+		<h2>FAMAS</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_FAMAS_targetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_L85A2">
+		<h2>L85A2</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_CAMO_1">
+			Camo 1
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_CAMO_2">
+			Camo 2
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_ForeGrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SCAR-L">
+		<h2>SCAR-L</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Bipod">
+			Bipod
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_CAMO_1">
+			Camo 1
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_CAMO_2">
+			Camo 2
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-l_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-l_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L85A2_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-L_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SG553LB">
+		<h2>SG553</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_BallisticScope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_RifleScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SG553LB_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SCAR-H">
+		<h2>SCAR-H</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_BallisticScope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_CAMO_BERKUT">
+			Camo Berkut
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_CAMO_DSRTTIGER">
+			Camo DSRTIGER
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_RifleScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SCAR-H_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M4A1">
+		<h2>M4 / M4A1</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M4A1_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_A91">
+		<h2>A91</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_A91_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_G36C">
+		<h2>G36C</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_G36C_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_AKS74u">
+		<h2>AKS-74u</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_AKS74u_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_HK53">
+		<h2>G53</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_CAMO_1">
+			Camo 1
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_CAMO_2">
+			Camo 2
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_FlashLight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK53_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MTAR">
+		<h2>MTAR-21</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_CAMO_1">
+			Camo 1
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_CAMO_2">
+			Camo 2
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MTAR_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_ACR">
+		<h2>ACW-R</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_CAMO_1">
+			Camo 1
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_CAMO_2">
+			Camo 2
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ACR_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_QBZ-95B">
+		<h2>QBZ-95B</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBZ-95B_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M249">
+		<h2>M249</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Bipod">
+			Bipod
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M249_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_Pecheneg">
+		<h2>PKP PECHENEG</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Camo_ATACS">
+			Camo Atacs
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Camo_KAMYSH">
+			Camo Kamysh
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Pecheneg_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M240">
+		<h2>M240B</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_BallisticScope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Camo_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Camo_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M240_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M60">
+		<h2>M60E4</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M60_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M27IAR">
+		<h2>M27-IAR</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M27IAR_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_RPK-74M">
+		<h2>RPK-74M</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_RPK-74M_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_LSAT">
+		<h2>LSAT</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_CAMO_1">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_LSAT_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_L86">
+		<h2>L86A2</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L86_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_QBB-95">
+		<h2>QBB-95</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBB-95_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MG36">
+		<h2>MG36</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_ForeGrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_HeavyBarrel">
+			Heavy Barrel
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_Rifle_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MG36_targetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_Type88">
+		<h2>MG36</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_Sound_Suppressor">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Type88_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M39EBR">
+		<h2>M39 EMR</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Rifle_scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M39EBR_Target_pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SV98">
+		<h2>SV98</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Flash_light">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Rifle_scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_StraightPull">
+			Laser Sight
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SV98_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M40A5">
+		<h2>M40A5</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_StraightPull">
+			Laser Sight
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M40A5_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M98B">
+		<h2>M98B</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_StraightPull">
+			Laser Sight
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M98B_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MK11">
+		<h2>MK11 MOD 0</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MK11_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SVD">
+		<h2>SVD</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Rifle_scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SVD_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_QBU-88">
+		<h2>QBU-88</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_QBU-88_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_L96">
+		<h2>L96</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Ballistic_20xScope">
+			Ballistic Scope (20x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_CAMO_ABU">
+			Camo ABU
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_CAMO_DIGIFLORA">
+			Camo DIGIFLORA
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_ForeGrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Rifle_6xScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_StraightPull">
+			Straight Pull
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_L96_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_HK417">
+		<h2>M417</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_ACOG">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_HK417_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_JNG90">
+		<h2>JNG-90</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_StraightPull">
+			Straight Pull
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JNG90_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SKS">
+		<h2>SKS</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Acog">
+			ACOG (4x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Bipod">
+			Bipod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Rifle_Scope">
+			Rifle Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SKS_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MP7">
+		<h2>MP7</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Eotech">
+			Holographic (HOLO)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP7_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_PP2000">
+		<h2>PP2000</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Flash_Suppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP2000_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_UMP45">
+		<h2>UMP-45</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_UMP45_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MagpulPDR">
+		<h2>PDW-R</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MagpulPDR_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_P90">
+		<h2>P90</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_P90_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_ASVal">
+		<h2>AS VAL</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_BallisticScope">
+			Ballistic Scope (8x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_Foregrip">
+			Foregrip
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_PKA">
+			PK-A (3.4x)
+        </label>
+		<label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_RifleScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_ASVal_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_PP-19">
+		<h2>PP-19</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_BallisticScope">
+			Ballistic Scope (8x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_CAMO_2">
+			Camo 2
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_PKA">
+			PK-A (3.4x)
+        </label>
+		<label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_RifleScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_PP-19_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_MP5K">
+		<h2>M5K</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_PKA">
+			PK-A (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_MP5K_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_870">
+		<h2>870MCS</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_ACOG">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Flash_Light">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_870_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_870_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_M1014">
+		<h2>M1014</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Ballistic_scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Eotech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_M1014_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_M1014_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SPAS12">
+		<h2>SPAS-12</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_ACOG">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Flash_Light">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Rifle_Scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SPAS12_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_SAIGA_20K">
+		<h2>SAIGA 12K</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_ACOG">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Ballistic_Scope">
+			Ballistic Scope (12x)
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Flashsuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_SAIGA_20k_Targetpointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_USAS-12">
+		<h2>USAS-12</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_RX_01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Rifle_scope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_USAS-12_Target_Pointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="U_Jackhammer">
+		<h2>MK3A1</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Acog">
+			ACOG (4x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_BallisticScope">
+			Ballistic Scope (12x)
+        </label>  
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JACKHAMMER_CAMO_1">
+			Camo 1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_JACKHAMMER_CAMO_2">
+			Camo 2
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_EOTech">
+			Holographic (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_ExtendedMag">
+			Extended Mag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_FlashSuppressor">
+			Flash Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Flashlight">
+			Tactical Light
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Flechette">
+			12G Flechette
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Frag">
+			12G Frag
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_IRNV">
+			IRNV (IR 1x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Kobra">
+			Kobra (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_M145">
+			M145 (3.4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_PK-AS">
+			PKA-S (HOLO)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_PKA">
+			PK-A (3.4x)
+        </label>  
+		<label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_PKS-07">
+			PKS-07 (7x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_PSO-1">
+			PSO-1 (4x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_RX01">
+			Reflex (RDS)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_RifleScope">
+			Rifle Scope (6x)
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Silencer">
+			Suppressor
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_Slug">
+			12G Slug
+        </label>
+        <label>
+			<input type="checkbox" name="unlockList" value="U_Jackhammer_TargetPointer">
+			Laser Sight
+        </label>
+	</div>
+	<div id="vehicles">
+		<div>
+		<label for="vehicle">Vehicle customization for:</label>
+
+		<select id="vehicle">
+		  <option value="none"onclick="vehicles('none')">-</option></div>
+		  <option value="AAVCustomization"onclick="vehicles('AAVCustomization')">AAVCustomization</option></div>
+		  <option value="ATKHELCustomization"onclick="vehicles('ATKHELCustomization')">ATKHELCustomization</option></div>
+		  <option value="ArtilleryCustomization"onclick="vehicles('ArtilleryCustomization')">ArtilleryCustomization</option></div>
+		  <option value="IFVCustomization"onclick="vehicles('IFVCustomization')">IFVCustomization</option></div>
+		  <option value="JETCustomization"onclick="vehicles('JETCustomization')">JETCustomization</option></div>
+		  <option value="LBTCustomization"onclick="vehicles('LBTCustomization')">LBTCustomization</option></div>
+		  <option value="MBTCustomization"onclick="vehicles('MBTCustomization')">MBTCustomization</option></div>
+		  <option value="SCOUTCustomization"onclick="vehicles('SCOUTCustomization')">SCOUTCustomization</option></div>
+		</select>
+		</div>
+	</div>
+	<div id="AAVCustomization">
+		<h2>AAVCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="AavReloadUpgrade">
+			AavReloadUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavProximityScan">
+			AavProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavAirRadar">
+			AavAirRadar
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavRegenUpgrade">
+			AavRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavStealth">
+			AavStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavReactiveArmor">
+			AavReactiveArmor
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavMissiles">
+			AavMissiles
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavSmokeLaunchers">
+			AavSmokeLaunchers
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavZoomOptics">
+			AavZoomOptics
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AavENVGOptics">
+			AavENVGOptics        
+		</label> 
+	</div>
+	<div id="ATKHELCustomization">
+		<h2>ATKHELCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliStealth">
+			AtkHeliStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliReloadUpgradePilot">
+			AtkHeliReloadUpgradePilot
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliProximityScan">
+			AtkHeliProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliAirRadar">
+			AtkHeliAirRadar
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliRegenUpgrade">
+			AtkHeliRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliLaserDesignator">
+			AtkHeliLaserDesignator
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliRocketGuidance">
+			AtkHeliRocketGuidance
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliFlareLauncher">
+			AtkHeliFlareLauncher
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliExtinguisher">
+			AtkHeliExtinguisher
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliECMJammer">
+			AtkHeliECMJammer        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliHeatseekerMissile">
+			AtkHeliHeatseekerMissile        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliStealthGunner">
+			AtkHeliStealthGunner        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliReloadUpgradeGunner">
+			AtkHeliReloadUpgradeGunner        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliProximityScanGunner">
+			AtkHeliProximityScanGunner        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliRegenUpgradeGunner">
+			AtkHeliRegenUpgradeGunner        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliZoomOptics">
+			AtkHeliZoomOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliENVGOptics">
+			AtkHeliENVGOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliHellfireMissile">
+			AtkHeliHellfireMissile        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="AtkHeliTVGuidedMissile">
+			AtkHeliTVGuidedMissile        
+		</label> 
+	</div>
+	<div id="ArtilleryCustomization">
+		<h2>ArtilleryCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryReloadUpgrade">
+			ArtilleryReloadUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryProximityScan">
+			ArtilleryProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryRegenUpgrade">
+			ArtilleryRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryStealth">
+			ArtilleryStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtillerySmokeLaunchers">
+			ArtillerySmokeLaunchers
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryZoomOptics">
+			ArtilleryZoomOptics
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryProximityDefense">
+			ArtilleryProximityDefense
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryATACMS">
+			ArtilleryATACMS
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryAAMissiles">
+			ArtilleryAAMissiles
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryAirBurst">
+			ArtilleryAirBurst        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ArtilleryTOW">
+			ArtilleryTOW        
+		</label> 
+	</div>
+	<div id="IFVCustomization">
+		<h2>IFVCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvReloadUpgrade">
+			IfvReloadUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvProximityScan">
+			IfvProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvRegenUpgrade">
+			IfvRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvStealth">
+			IfvStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvReactiveArmor">
+			IfvReactiveArmor
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvTOW">
+			IfvTOW
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvCoax">
+			IfvCoax
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvAPFSDS-T">
+			IfvAPFSDS-T
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvHellfire">
+			IfvHellfire
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvSmokeLaunchers">
+			IfvSmokeLaunchers        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvENVGOptics">
+			IfvENVGOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="IfvZoomOptics">
+			IfvZoomOptics        
+		</label> 
+	</div>
+	<div id="JETCustomization">
+		<h2>JETCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="JetStealth">
+			JetStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetReload">
+			JetReload
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetProximityScan">
+			JetProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetAirRadar">
+			JetAirRadar
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetRegenUpgrade">
+			JetRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetAvionicsUpgrade">
+			JetAvionicsUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetFlareLauncher">
+			JetFlareLauncher
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetFireExtinguisher">
+			JetFireExtinguisher
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetECMJammerPod">
+			JetECMJammerPod
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetHeatseekerStance">
+			JetHeatseekerStance        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetRocketStance">
+			JetRocketStance        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="JetMaverickMissiles">
+			JetMaverickMissiles        
+		</label> 
+	</div>
+	<div id="LBTCustomization">
+		<h2>LBTCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtProximityScan">
+			LbtProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtReactiveArmor">
+			LbtReactiveArmor
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtStealth">
+			LbtStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtRegenUpgrade">
+			LbtRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtReloadUpgrade1">
+			LbtReloadUpgrade1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtCoaxLMG">
+			LbtCoaxLMG
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtCanisterShell">
+			LbtCanisterShell
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtATGMShell">
+			LbtATGMShell
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtTOWMissile">
+			LbtTOWMissile
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtMbtHERounds">
+			LbtMbtHERounds        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtSmokeLaunchers">
+			LbtSmokeLaunchers        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtZoomOptics">
+			LbtZoomOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LbtENVGOptics">
+			LbtENVGOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="LandVehicleFireExtinguisher">
+			LandVehicleFireExtinguisher        
+		</label>
+	</div>
+	<div id="MBTCustomization">
+		<h2>MBTCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtProximityScan">
+			MbtProximityScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtReactiveArmor">
+			MbtReactiveArmor
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtStealth">
+			MbtStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtRegenUpgrade">
+			MbtRegenUpgrade
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtReloadUpgrade1">
+			MbtReloadUpgrade1
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtCoaxLMG">
+			MbtCoaxLMG
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtCanisterShell">
+			MbtCanisterShell
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtCoaxHMG">
+			MbtCoaxHMG
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtATGMShell">
+			MbtATGMShell
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtSmokeLaunchers">
+			MbtSmokeLaunchers        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtZoomOptics">
+			MbtZoomOptics        
+		</label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="MbtENVGOptics">
+			MbtENVGOptics        
+		</label> 
+	</div>
+	<div id="SCOUTCustomization">
+		<h2>SCOUTCustomization</h2>
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutStealth">
+			ScoutStealth
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutWPEfficiency">
+			ScoutWPEfficiency
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutScan">
+			ScoutScan
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutHeliAirRadar">
+			ScoutHeliAirRadar
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutHealthRegen">
+			ScoutHealthRegen
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutFlares">
+			ScoutFlares
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutExtinguisher">
+			ScoutExtinguisher
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutECMJammer">
+			ScoutECMJammer
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutAAMissile">
+			ScoutAAMissile
+        </label> 
+        <label>
+			<input type="checkbox" name="unlockList" value="ScoutATGMissile">
+			ScoutATGMissile        
+		</label> 
+	</div>
+	<div id="output">
+		<div id="button"><button onclick="generate()">Generate</button></div>
+		<div id="button"><button onclick="selectAll()">Select All</button></div>
+		<div id="button"><button onclick="unselectAll()">Unselect All</button></div>
+		<div id="generation"></div>
+	<div>
+	<script>
+	function generate(){
+		if(document.getElementById("unlockMode").selectedIndex == "0")
+		{
+			document.getElementById("generation").innerHTML = '<p>"vars.unlockMode all"</p>';
+		}else if(document.getElementById("unlockMode").selectedIndex == "1")
+		{
+			document.getElementById("generation").innerHTML = '<p>"vars.unlockMode whitelist"</p>';
+		}else if(document.getElementById("unlockMode").selectedIndex == "2")
+		{
+			document.getElementById("generation").innerHTML = '<p>"vars.unlockMode blacklist"</p>';
+		}
+		
+		document.getElementById("generation").innerHTML += '<span>"unlockList.set<span>';
+		const checkboxes = document.querySelectorAll('input[name="unlockList"]');
+		const num = checkboxes.length;
+		for (let i=0; i < num; i++) {
+			if (checkboxes[i].checked === true) {
+				document.getElementById("generation").innerHTML += '<span> '+checkboxes[i].value +'</span>';
+			}
+		}	
+		document.getElementById("generation").innerHTML += '<span>"</span>';
+		document.getElementById("generation").style.display = 'block';
+	}
+	function update(weapon){
+			document.getElementById("U_M16A4").style.display = 'none';
+			document.getElementById("U_M416").style.display = 'none';
+			document.getElementById("U_AEK971").style.display = 'none';
+			document.getElementById("U_F2000").style.display = 'none';
+			document.getElementById("U_AN94").style.display = 'none';
+			document.getElementById("U_AK74M").style.display = 'none';
+			document.getElementById("U_KH2002").style.display = 'none';
+			document.getElementById("U_G3A3").style.display = 'none';
+			document.getElementById("U_SteyrAug").style.display = 'none';
+			document.getElementById("U_FAMAS").style.display = 'none';
+			document.getElementById("U_L85A2").style.display = 'none';
+			document.getElementById("U_SCAR-L").style.display = 'none';
+			document.getElementById("U_SG553LB").style.display = 'none';
+			document.getElementById("U_SCAR-H").style.display = 'none';
+			document.getElementById("U_M4A1").style.display = 'none';
+			document.getElementById("U_A91").style.display = 'none';
+			document.getElementById("U_G36C").style.display = 'none';
+			document.getElementById("U_AKS74u").style.display = 'none';
+			document.getElementById("U_HK53").style.display = 'none';
+			document.getElementById("U_MTAR").style.display = 'none';
+			document.getElementById("U_ACR").style.display = 'none';
+			document.getElementById("U_QBZ-95B").style.display = 'none';
+			document.getElementById("U_M249").style.display = 'none';
+			document.getElementById("U_Pecheneg").style.display = 'none';
+			document.getElementById("U_M240").style.display = 'none';
+			document.getElementById("U_M60").style.display = 'none';
+			document.getElementById("U_M27IAR").style.display = 'none';
+			document.getElementById("U_RPK-74M").style.display = 'none';
+			document.getElementById("U_LSAT").style.display = 'none';
+			document.getElementById("U_L86").style.display = 'none';
+			document.getElementById("U_QBB-95").style.display = 'none';
+			document.getElementById("U_MG36").style.display = 'none';
+			document.getElementById("U_Type88").style.display = 'none';
+			document.getElementById("U_M39EBR").style.display = 'none';
+			document.getElementById("U_SV98").style.display = 'none';
+			document.getElementById("U_M40A5").style.display = 'none';
+			document.getElementById("U_M98B").style.display = 'none';
+			document.getElementById("U_MK11").style.display = 'none';
+			document.getElementById("U_SVD").style.display = 'none';
+			document.getElementById("U_QBU-88").style.display = 'none';
+			document.getElementById("U_L96").style.display = 'none';
+			document.getElementById("U_HK417").style.display = 'none';
+			document.getElementById("U_JNG90").style.display = 'none';
+			document.getElementById("U_SKS").style.display = 'none';
+			document.getElementById("U_MP7").style.display = 'none';
+			document.getElementById("U_PP2000").style.display = 'none';
+			document.getElementById("U_UMP45").style.display = 'none';
+			document.getElementById("U_MagpulPDR").style.display = 'none';
+			document.getElementById("U_P90").style.display = 'none';
+			document.getElementById("U_ASVal").style.display = 'none';
+			document.getElementById("U_PP-19").style.display = 'none';
+			document.getElementById("U_MP5K").style.display = 'none';
+			document.getElementById("U_870").style.display = 'none';
+			document.getElementById("U_M1014").style.display = 'none';
+			document.getElementById("U_SPAS12").style.display = 'none';
+			document.getElementById("U_SAIGA_20K").style.display = 'none';
+			document.getElementById("U_USAS-12").style.display = 'none';
+			document.getElementById("U_Jackhammer").style.display = 'none';
+			document.getElementById(weapon).style.display = 'grid';
+	}
+	function vehicles(vehicle){
+			document.getElementById("AAVCustomization").style.display = 'none';
+			document.getElementById("ATKHELCustomization").style.display = 'none';
+			document.getElementById("ArtilleryCustomization").style.display = 'none';
+			document.getElementById("IFVCustomization").style.display = 'none';
+			document.getElementById("JETCustomization").style.display = 'none';
+			document.getElementById("LBTCustomization").style.display = 'none';
+			document.getElementById("MBTCustomization").style.display = 'none';
+			document.getElementById("SCOUTCustomization").style.display = 'none';
+			document.getElementById(vehicle).style.display = 'grid';
+	}
+	function selectAll(){
+		const checkboxes = document.querySelectorAll('input[name="unlockList"]');
+		const num = checkboxes.length;
+		for (let i=0; i < num; i++) {
+			if (checkboxes[i].checked === false) {
+				checkboxes[i].checked = true;
+			}
+		}	
+	}
+	function unselectAll(){
+		const checkboxes = document.querySelectorAll('input[name="unlockList"]');
+		const num = checkboxes.length;
+		for (let i=0; i < num; i++) {
+			if (checkboxes[i].checked === true) {
+				checkboxes[i].checked = false;
+			}
+		}	
+	}
+	</script>
+	<style>
+		#assaultRifles, #carabiner, #LMGs, #sniperRifles, #general, #specialization, #placeholders, #U_M16A4, #U_M416, #U_AEK971, #U_F2000, #U_AN94, #U_AK74M, #U_KH2002, #U_G3A3, #U_SteyrAug, #U_FAMAS, #U_L85A2, #U_SCAR-L, #U_SG553LB, #U_SCAR-H, #U_M4A1, #U_A91, #U_G36C, #U_AKS74u, #U_HK53, #U_MTAR, #U_ACR, #U_QBZ-95B, #U_M249, #U_Pecheneg, #U_M240, #U_M60, #U_M27IAR, #U_RPK-74M, #U_LSAT, #U_L86, #U_QBB-95, #U_MG36, #U_Type88, #U_M39EBR, #U_SV98, #U_M40A5, #U_M98B, #U_MK11, #U_SVD, #U_QBU-88, #U_L96, #U_HK417, #U_JNG90, #U_SKS, #U_MP7, #U_PP2000, #U_UMP45, #U_MagpulPDR, #U_P90, #U_ASVal, #U_PP-19, #U_MP5K, #U_870, #U_M1014, #U_SPAS12, #U_SAIGA_20K, #U_USAS-12, #U_Jackhammer, #AAVCustomization, #ATKHELCustomization, #ArtilleryCustomization, #IFVCustomization, #JETCustomization, #LBTCustomization, #MBTCustomization, #SCOUTCustomization {
+			float: left;
+			width: 15%;
+		}
+		#assaultRifles, #carabiner, #LMGs, #sniperRifles, #general, #specialization, #placeholders {
+			display: grid;
+		}
+		button {
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+		#button, #generation {
+			text-align: center;
+		}
+		#generation {
+			border: 1px dotted #000;
+			width: 500px;
+			display: none;
+			margin: auto;
+			padding: 20px;
+		}
+		#U_M16A4, #U_M416, #U_AEK971, #U_F2000, #U_AN94, #U_AK74M, #U_KH2002, #U_G3A3, #U_SteyrAug, #U_FAMAS, #U_L85A2, #U_SCAR-L, #U_SG553LB, #U_SCAR-H, #U_M4A1, #U_A91, #U_G36C, #U_AKS74u, #U_HK53, #U_MTAR, #U_ACR, #U_QBZ-95B, #U_M249, #U_Pecheneg, #U_M240, #U_M60, #U_M27IAR, #U_RPK-74M, #U_LSAT, #U_L86, #U_QBB-95, #U_MG36, #U_Type88, #U_M39EBR, #U_SV98, #U_M40A5, #U_M98B, #U_MK11, #U_SVD, #U_QBU-88, #U_L96, #U_HK417, #U_JNG90, #U_SKS, #U_MP7, #U_PP2000, #U_UMP45, #U_MagpulPDR, #U_P90, #U_ASVal, #U_PP-19, #U_MP5K, #U_870, #U_M1014, #U_SPAS12, #U_SAIGA_20K, #U_USAS-12, #U_Jackhammer, #AAVCustomization, #ATKHELCustomization, #ArtilleryCustomization, #IFVCustomization, #JETCustomization, #LBTCustomization, #MBTCustomization, #SCOUTCustomization {
+			display: none;
+		}
+		#attachment, #output{
+			width: 50%;
+			display: grid;
+		}
+	</style>
+</body>
+</html>
