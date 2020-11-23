@@ -24,7 +24,7 @@ BTW this is the first version. If you notice any bugs or have any suggestions fe
 | vars.textChatSpamDetectionTime          | detectionTime    |  |6 |
 | vars.textChatSpamTriggerCount          | triggerCount    |  |6 |
 | vars.unlockMode | all/blacklist/whitelist | | all|
-| unlockList.add | weapon/attachment/vehicle	|	
+| unlockList.add | weapon/attachment/vehicle/specialization	|	
 | unlockList.clear| 
 | unlockList.list| 
 | unlockList.load| 
