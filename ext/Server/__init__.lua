@@ -517,7 +517,15 @@ function AdvancedRCON:OnKickedFromSquad(p_Player, p_Squad)
 end 
 
 function AdvancedRCON:OnKilled(player, inflictor, position, weapon, isRoadKill, isHeadShot, wasVictimInReviveState, info)
-	RCON:TriggerEvent("player.onKilled",{player.name, inflictor.name, tostring(position.x), tostring(position.y), tostring(position.z), weapon, tostring(isRoadKill), tostring(isHeadShot), tostring(wasVictimInReviveState), tostring(inflictor.soldier.worldTransform.trans.x), tostring(inflictor.soldier.worldTransform.trans.y), tostring(inflictor.soldier.worldTransform.trans.z)})
+	if inflictor ~= nil then
+		if inflictor.controlledControllable ~= nil and inflictor.controlledControllable.data:Is("VehicleEntityData") then
+			RCON:TriggerEvent("player.onKilled",{player.name, inflictor.name, tostring(position.x), tostring(position.y), tostring(position.z), VehicleEntityData(inflictor.controlledControllable.data).controllableType:gsub(".+/.+/",""), tostring(isRoadKill), tostring(isHeadShot), tostring(wasVictimInReviveState), tostring(inflictor.soldier.worldTransform.trans.x), tostring(inflictor.soldier.worldTransform.trans.y), tostring(inflictor.soldier.worldTransform.trans.z)})
+		else
+			RCON:TriggerEvent("player.onKilled",{player.name, inflictor.name, tostring(position.x), tostring(position.y), tostring(position.z), weapon, tostring(isRoadKill), tostring(isHeadShot), tostring(wasVictimInReviveState), tostring(inflictor.soldier.worldTransform.trans.x), tostring(inflictor.soldier.worldTransform.trans.y), tostring(inflictor.soldier.worldTransform.trans.z)})
+		end
+	else
+		RCON:TriggerEvent("player.onKilled",{player.name, player.name, tostring(position.x), tostring(position.y), tostring(position.z), weapon, tostring(isRoadKill), tostring(isHeadShot), tostring(wasVictimInReviveState), tostring(position.x), tostring(position.y), tostring(position.z)})
+	end
 	-- example: "player.onKilled J4nssent Flash_Hit 5.123544 -84.946486 100.564631 AN94_Abakan false true false 10.123544 -85.946486 105.564631"
 end 
 
