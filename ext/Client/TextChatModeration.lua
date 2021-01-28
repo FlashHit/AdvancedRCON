@@ -39,9 +39,12 @@ function TextChatModeration:RegisterEvents()
 end
 		
 function TextChatModeration:OnCreateChatMessage(hook, message, playerId, recipientMask, channelId, isSenderDead)
-	isVoice = false
-	isAdmin = false
-	player = PlayerManager:GetPlayerById(playerId)
+	local isVoice = false
+	local isAdmin = false
+	local player = PlayerManager:GetPlayerById(playerId)
+	if player = nil then
+		return
+	end
 	for _,textChatModerationListPlayer in pairs(self.textChatModerationList) do
 		if textChatModerationListPlayer == "muted:"..player.name and channelId~= 4 then
 			hook:Return()
