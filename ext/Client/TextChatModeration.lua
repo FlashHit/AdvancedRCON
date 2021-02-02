@@ -42,7 +42,7 @@ function TextChatModeration:OnCreateChatMessage(hook, message, playerId, recipie
 	local isVoice = false
 	local isAdmin = false
 	local player = PlayerManager:GetPlayerById(playerId)
-	if player = nil then
+	if player == nil then
 		return
 	end
 	for _,textChatModerationListPlayer in pairs(self.textChatModerationList) do
